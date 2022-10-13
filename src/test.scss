@@ -1,0 +1,207 @@
+$smallmobile: 320px;
+$mediummobile: 375px;
+$largemobile: 425px;
+$tablet: 768px;
+$desktop: 1025px;
+
+body {
+  .page-container {
+    font-family: karla;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px;
+  }
+  .background {
+    background-image: url("./image/Purple.png");
+    width: 100%;
+    height: 60px;
+    @media screen and (min-width: $smallmobile) and (max-width: $largemobile) {
+      font-size: 15px;
+    }
+    @media screen and (min-width: $tablet) {
+      height: 100px;
+    }
+  }
+  .mainContent {
+    @media screen and (min-width: $smallmobile) and (max-width: $tablet) {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .header {
+    width: 100%;
+    position: relative;
+    color: #ffffff;
+
+    .textOverlay {
+      width: 100%;
+      position: absolute;
+      top: 1%;
+      margin-left: 1%;
+      @media screen and (min-width: $smallmobile) and (max-width: $largemobile) {
+      }
+      @media screen and (min-width: $tablet) {
+        margin: 30px;
+      }
+
+      .meme-title {
+        display: flex;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: -0.1em;
+        align-items: center;
+        @media screen and (min-width: $smallmobile) and (max-width: $mediummobile) {
+          font-size: 15px;
+        }
+        @media screen and (min-width: $mediummobile) and (max-width: $largemobile) {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 27px;
+        }
+        @media screen and (min-width: $tablet) {
+          font-size: 50px;
+          font-weight: 700;
+          line-height: 27px;
+          margin: -14px;
+        }
+        @media screen and (min-width: $desktop) {
+        }
+      }
+      .project3 {
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: right;
+        letter-spacing: normal;
+        @media screen and (min-width: $smallmobile) and (max-width: $mediummobile) {
+          font-size: 12px;
+          margin: 0px 20px;
+        }
+        @media screen and (min-width: $largemobile) {
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 25px;
+          margin: auto;
+        }
+        @media screen and (min-width: $tablet) and (max-width: $desktop) {
+          font-size: 23px;
+          margin: 0px 60px;
+        }
+        @media screen and (min-width: $desktop) {
+        }
+      }
+      .troll-face {
+        height: 30px;
+        margin-right: 6px;
+        margin-bottom: -8px;
+
+        @media screen and (min-width: $mediummobile) and (max-width: $largemobile) {
+          height: 34px;
+          margin-right: 6px;
+        }
+        @media screen and (min-width: $tablet) and (max-width) {
+          height: 50px;
+          margin-right: 10px;
+        }
+        @media screen and (min-width: $desktop) {
+        }
+      }
+    }
+  }
+  .form {
+    margin-left: 36px;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $smallmobile) and (max-width: $largemobile) {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  .button-text {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: center;
+    height: 40px;
+    width: 95%;
+    border-radius: 5px;
+    background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+    margin-top: 15px;
+    font-family: karla;
+    @media screen and (min-width: $smallmobile) and (max-width: $largemobile) {
+      width: 94%;
+      margin-left: 3%;
+    }
+  }
+
+  .inputBoxes {
+    font-family: karla;
+    margin-top: 20px;
+    border: #d5d4d8;
+    width: 100%;
+  }
+  .inputContainer {
+    @media screen and (min-width: $smallmobile) and (max-width: $largemobile) {
+      margin-left: 10%;
+    }
+    // @media screen and (min-width: $largemobile) {
+    //   width: 70%;
+    //   margin-left: 7%;
+    //   margin-bottom: 3%;
+    // }
+
+    .fBox {
+      height: 35px;
+      width: 50%;
+      border-radius: 5px;
+      text-indent: 5px;
+      @media screen and (min-width: $smallmobile) and (max-width: $largemobile) {
+        width: 70%;
+        margin-left: 7%;
+        margin-bottom: 3%;
+      }
+      @media screen and (min-width: $tablet) {
+        width: 45%;
+        margin-right: 20px;
+      }
+    }
+    .lBox {
+      height: 35px;
+      width: 50%;
+      border-radius: 5px;
+      text-indent: 5px;
+
+      @media screen and (min-width: $smallmobile) and (max-width: $largemobile) {
+        width: 70%;
+        margin-left: 7%;
+      }
+
+      @media screen and (min-width: $largemobile) {
+        margin-top: 5%;
+      }
+      @media screen and (min-width: $tablet) {
+        width: 47%;
+      }
+    }
+  }
+  .meme-img {
+    display: block;
+
+    @media screen and (min-width: $smallmobile) and (max-width: $largemobile) {
+      width: 95%;
+      margin-top: 5%;
+      height: auto;
+      margin-left: 2.5%;
+    }
+    @media screen and (min-width: $largemobile) {
+      margin-top: 5%;
+    }
+    @media screen and (min-width: $tablet) {
+      width: 95%;
+      margin-top: 5%;
+      height: auto;
+    }
+  }
+}
